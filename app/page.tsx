@@ -65,6 +65,16 @@ export default function Home() {
           Contact
         </Link>
       </div>
+      <div className="absolute bottom-0 right-0 z-[10]">
+        <Image
+          src="/horse.png"
+          alt="horse"
+          height={300}
+          width={300}
+          className="absolute right-55 top-40"
+        />
+        <Image src="/cliff.webp" alt="cliff" width={480} height={480} />
+      </div>
     </main>
   );
 }
