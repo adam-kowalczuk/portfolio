@@ -12,6 +12,13 @@ const Navbar = () => {
           height={40}
           className="w-full h-full object-contain rounded-full"
         />
+        <h1 className="text-white text-[25px] font-semibold">Adam Kowalczuk</h1>
+      </div>
+
+      <div className="flex flex-row gap-5 mb-2">
+        {Socials.map((social) => (
+          <Image />
+        ))}
       </div>
     </div>
   );
