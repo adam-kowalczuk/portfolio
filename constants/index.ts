@@ -82,8 +82,12 @@ export const Socials = [
     src: "/instagram.svg"
   },
   {
-    name: "Facebook",
-    src: "/facebook.svg"
+    name: "Github",
+    src: "/github.svg"
+  },
+  {
+    name: "LinkedIn",
+    src: "/linkedin.png"
   },
   {
     name: "Instagram",
@@ -120,18 +124,18 @@ export const NavLinks = [
     link: "/"
   },
   {
-    name: "/my-skills",
+    name: "skills",
     icon: RxPerson,
-    link: "/my-skills"
+    link: "/skills"
   },
   {
-    name: "/my-projects",
+    name: "/projects",
     icon: RxDashboard,
-    link: "/my-projects"
+    link: "/projects"
   },
   {
-    name: "/contact-me",
+    name: "/contact",
     icon: RxClipboard,
-    link: "/contact-me"
+    link: "/contact"
   }
 ];
