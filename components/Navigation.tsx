@@ -1,7 +1,8 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 
 const Navigation = () => {
+  const [isRouting, setIsRouting] = useState(false);
   return <div>Navigation</div>;
 };
 
