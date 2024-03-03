@@ -34,15 +34,15 @@ const Transition = () => {
         initial="initial"
         exit="exit"
         animate="animate"
-        transition={{ delay: 0.2, duration: 0.6, ease: "easeInOut" }}
+        transition={{ delay: 0.4, duration: 0.6, ease: "easeInOut" }}
       />
       <motion.div
-        className="fixed right-0 h-screen w-screen bottom-full z-[20] bg-[#4b3792]"
+        className="fixed right-0 h-screen w-screen bottom-full z-[10] bg-[#4b3792]"
         variants={TransitionVariants}
         initial="initial"
         exit="exit"
         animate="animate"
-        transition={{ delay: 0.2, duration: 0.6, ease: "easeInOut" }}
+        transition={{ delay: 0.6, duration: 0.6, ease: "easeInOut" }}
       />
     </div>
   );
