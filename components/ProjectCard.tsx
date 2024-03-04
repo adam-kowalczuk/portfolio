@@ -22,7 +22,13 @@ const ProjectCard = ({ image, title, text }: Props) => {
       onClick={handleFlip}
       className="w-[450px] h-[280px] rounded-md cursor-pointer"
     >
-      ProjectCard
+      <motion.div
+        className="flip-card-inner w-full h-full"
+        initial={false}
+        animate={{ rotateY: isFlipped ? 180 : 360 }}
+        transition={{ duration: 0.6, animationDirection: "normal" }}
+        onAnimationComplete={() => setIsAnimating(false)}
+      ></motion.div>
     </div>
   );
 };
