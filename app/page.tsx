@@ -1,14 +1,22 @@
+import Navbar from "@/components/Navbar";
+
 export default function Home() {
   return (
     <main className="w-screen h-screen relative">
-      <div className="flex items-center w-full h-full bg-[#1b1d1e]">
-        <div className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[1000px]">
-          <h1 className=" text-[50px] text-white font-semibold">
-            Adam Kowalczuk
-          </h1>
+      <div className="flex flex-col justify-center items-center w-full h-full bg-[#1b1d1e]">
+        <div className="pb-[100px] flex flex-col gap-5 max-w-[60%]">
+          <h1 className="text-[45px] text-gray-200 font-semibold">Hello!</h1>
           <p className="text-gray-200 sm:block">
-            I'm a software developer based in Alberta, with a background
-            building Javascipt-centric web applications.
+            I'm <span className="font-bold">Adam Kowalczuk</span>, a full-stack
+            developer currently based in Alberta, Canada. I recently left the
+            world of linguistic research to undertake a new adventure in
+            information technology. My experience thus far has been in building
+            robust web applications with Javascript. As of late I am partial to
+            working with React-based frameworks.
+          </p>
+          <p className="text-gray-200 sm:block">
+            I am currently looking for my next role, so have a look around and
+            please reach out if you're interested in working with me.
           </p>
         </div>
       </div>
