@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Socials } from "@/constants";
+import { RxHome } from "react-icons/rx";
 
 // Navbar functional component
 const Navbar = () => {
@@ -20,6 +22,11 @@ const Navbar = () => {
         </div>
         {/* Site title */}
         <h1 className="text-white text-[25px] font-semibold">Adam Kowalczuk</h1>
+        <Link href="/">
+          {/* <a style={{ textDecoration: "none", color: "inherit" }}> */}
+          <RxHome size={32} className="text-white" />
+          {/* </a> */}
+        </Link>
       </div>
 
       {/* Social media icons */}
