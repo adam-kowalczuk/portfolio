@@ -12,7 +12,6 @@ const Navbar = () => {
       {/* Navigation section */}
       <Link href="/">
         <RxHome size={28} className="text-white hover:text-red-800" />
-        {/* </a> */}
       </Link>
       {/* Render Navigation links */}
       <Navigation />
