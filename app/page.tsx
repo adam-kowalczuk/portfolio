@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main className="w-screen h-screen relative">
       <div className="flex flex-col justify-center items-center w-full h-full bg-[#1b1d1e]">
-        <div className="pb-[100px] flex flex-col gap-5 max-w-[60%]">
+        <div className="pb-[100px] flex flex-col gap-5 max-w-[80%] md:max-w-[60%]">
           <h1 className="text-[48px] text-gray-200 font-semibold">Hello!</h1>
           <p className="text-gray-200 sm:block">
             I'm <span className="font-bold">Adam Kowalczuk</span>, a full-stack
