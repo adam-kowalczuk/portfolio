@@ -32,20 +32,18 @@ const Navigation = () => {
 
   // Render the navigation component
   return (
-    <div
-      style={{ left: "20%" }}
-      className="absolute z-[50] -bottom-20 w-[50%] md:w-[20%] max-h-[150px] rounded-full flex justify-between items-center bg-black border border-white py-7 px-4"
-    >
+    <div className="flex justify-between items-center">
       {isRouting && <Transition />}
       {/* Map through NavLinks array to render navigation links */}
+
       {NavLinks.map((nav) => (
-        <Link key={nav.name} href={nav.link} className="mb-16 pl-4 min-w-[20%]">
-          {/* Render navigation icon */}
-          <nav.icon
-            className={`w-[24px] h-[24px] ${
-              path === nav.name ? "text-purple-800" : "text-white"
-            }`}
-          />
+        <Link
+          key={nav.name}
+          href={nav.link}
+          className="pl-4 min-w-[20%] text-white text-[24px] hover:text-red-800"
+        >
+          {/* Render navigation name */}
+          {nav.name}
         </Link>
       ))}
     </div>
