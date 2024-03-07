@@ -7,11 +7,11 @@ import { RxHome } from "react-icons/rx";
 // Navbar functional component
 const Navbar = () => {
   return (
-    <div className="fixed top-0 z-[40] w-full h-[100px] bg-transparent flex justify-between items-center px-10 md:px-20">
+    <div className="fixed top-0 z-[40] w-[80%] md:w-[60%] h-[100px] bg-transparent flex justify-between items-center">
       {/* Navigation section */}
-      <div className="flex flex-row gap-3 items-center">
-        {/* Logo */}
-        <div className="relative">
+      {/* <div className="flex flex-row gap-3 items-center"> */}
+      {/* Logo */}
+      {/* <div className="relative">
           <Image
             src="/horseLogo.jpg"
             alt="logo"
@@ -19,15 +19,15 @@ const Navbar = () => {
             height={40}
             className="w-full h-full object-contain rounded-full"
           />
-        </div>
-        {/* Site title */}
-        <h1 className="text-white text-[25px] font-semibold">Adam Kowalczuk</h1>
-        <Link href="/">
-          {/* <a style={{ textDecoration: "none", color: "inherit" }}> */}
-          <RxHome size={32} className="text-white" />
-          {/* </a> */}
-        </Link>
-      </div>
+        </div> */}
+      {/* Site title */}
+      {/* <h1 className="text-white text-[25px] font-semibold">Adam Kowalczuk</h1> */}
+      <Link href="/">
+        {/* <a style={{ textDecoration: "none", color: "inherit" }}> */}
+        <RxHome size={32} className="text-white" />
+        {/* </a> */}
+      </Link>
+      {/* </div> */}
 
       {/* Social media icons */}
       <div className="flex flex-row gap-5 mb-2">
