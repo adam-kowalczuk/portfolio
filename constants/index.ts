@@ -119,22 +119,17 @@ export const Projects = [
 
 export const NavLinks = [
   {
-    name: "/",
-    icon: RxHome,
-    link: "/"
-  },
-  {
-    name: "skills",
+    name: "Skills",
     icon: RxPerson,
     link: "/skills"
   },
   {
-    name: "/projects",
+    name: "Projects",
     icon: RxDashboard,
     link: "/projects"
   },
   {
-    name: "/contact",
+    name: "Contact",
     icon: RxClipboard,
     link: "/contact"
   }
