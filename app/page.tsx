@@ -12,11 +12,11 @@ export default function Home() {
           </p>
           <p className="text-gray-200 sm:block">
             My experience thus far has been in building robust web applications
-            primarily with Javascript. As of late I am partial to working with
+            primarily with Javascript. As of late I'm partial to working with
             React frameworks.
           </p>
           <p className="text-gray-200 sm:block">
-            I am currently looking for my next role, so have a look around and
+            I'm currently looking for my next role, so have a look around and
             don't hesitate to reach out if you're interested in working
             together.
           </p>
