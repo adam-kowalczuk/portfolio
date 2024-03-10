@@ -14,9 +14,9 @@ import { Autoplay } from "swiper/modules";
 const Page = () => {
   return (
     <div className="h-screen w-screen flex items-center justify-center bg-[#1b1d1e]">
-      <div className="flex flex-col gap-20 max-w-[80%] text-center items-center">
+      <div className="flex flex-col gap-20 max-w-[80%] md:max-w-[60%] text-center items-center">
         {/* Title and subtitle section */}
-        <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col gap-4 min-w-[100%] text-center sm:text-left">
           <h1 className="font-semibold text-gray-200 text-[48px]">Skills</h1>
           <p className="text-gray-200">
             This site was created using NextJS, TypeScript, and Tailwind CSS. It
@@ -30,7 +30,7 @@ const Page = () => {
           autoplay={{ delay: 0, disableOnInteraction: false }}
           speed={5000}
           modules={[Autoplay]}
-          className="max-w-[80%]"
+          className="max-w-[100%]"
         >
           {/* Mapping through skill data to create Swiper slides */}
           {SkillData.map((skill, index) => (
@@ -56,7 +56,7 @@ const Page = () => {
           }}
           speed={5000}
           modules={[Autoplay]}
-          className="max-w-[80%]"
+          className="max-w-[100%]"
         >
           {/* Mapping through skill data to create Swiper slides */}
           {SkillData.map((skill, index) => (
