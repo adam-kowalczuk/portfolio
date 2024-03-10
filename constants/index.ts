@@ -78,21 +78,20 @@ export const SkillData = [
 
 export const Socials = [
   {
-    name: "Discord",
-    src: "/instagram.svg"
-  },
-  {
     name: "Github",
-    src: "/github.svg"
+    src: "/github.svg",
+    href: "https://www.github.com/adam-kowalczuk"
   },
   {
     name: "LinkedIn",
-    src: "/linkedin.png"
-  },
-  {
-    name: "Instagram",
-    src: "/discord.svg"
+    src: "/linkedin.png",
+    href: "https://www.linkedin.com/in/adam-kowalczuk"
   }
+  // {
+  //   name: "Discord",
+  //   src: "/discord.svg",
+  //   href:
+  // }
 ];
 export const Projects = [
   {
