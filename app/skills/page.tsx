@@ -24,7 +24,7 @@ const Page = () => {
           </p>
         </div>
         {/* Swiper component for displaying skills */}
-        <div className="flex flex-row flex-wrap justify-left">
+        <div className="hidden sm:flex flex-row flex-wrap justify-left">
           {SkillData.map((skill, index) => (
             <Image
               key={index}
