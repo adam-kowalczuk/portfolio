@@ -4,75 +4,75 @@ export const SkillData = [
   {
     name: "Html 5",
     Image: "/html.png",
-    width: 80,
-    height: 80
+    width: 70,
+    height: 70
   },
   {
     name: "Css",
     Image: "/css.png",
-    width: 80,
-    height: 80
+    width: 70,
+    height: 70
   },
   {
     name: "JavaScript",
     Image: "/js.png",
-    width: 65,
+    width: 70,
     height: 65
   },
   {
     name: "Tailwind Css",
     Image: "/tailwind.png",
-    width: 80,
-    height: 80
+    width: 70,
+    height: 70
   },
   {
     name: "React",
     Image: "/react.png",
-    width: 80,
-    height: 80
+    width: 70,
+    height: 70
   },
   {
     name: "Redux",
     Image: "/redux.png",
-    width: 80,
-    height: 80
+    width: 70,
+    height: 70
   },
 
   {
     name: "TypeScript",
     Image: "/ts.png",
-    width: 80,
-    height: 80
+    width: 70,
+    height: 70
   },
   {
     name: "Next js 13",
     Image: "/next.png",
-    width: 80,
-    height: 80
+    width: 70,
+    height: 70
   },
   {
     name: "Framer Motion",
     Image: "/framer.png",
-    width: 80,
-    height: 80
+    width: 70,
+    height: 70
   },
   {
     name: "Stripe Payment",
     Image: "/stripe.webp",
-    width: 80,
-    height: 80
+    width: 70,
+    height: 70
   },
   {
     name: "Node js",
     Image: "/node-js.png",
-    width: 80,
-    height: 80
+    width: 70,
+    height: 70
   },
   {
     name: "Mongo db",
     Image: "/mongodb.png",
-    width: 40,
-    height: 40
+    width: 70,
+    height: 70
   }
 ];
 
