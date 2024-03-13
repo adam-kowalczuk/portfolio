@@ -1,4 +1,4 @@
-import { RxHome, RxPerson, RxDashboard, RxClipboard } from "react-icons/rx";
+import { RxPerson, RxDashboard, RxClipboard } from "react-icons/rx";
 
 export const SkillData = [
   {
@@ -89,24 +89,19 @@ export const Socials = [
 ];
 export const Projects = [
   {
-    title: "Modern Nextjs Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/NextWebsite.png"
-  },
-  {
     title: "Space Themed Website",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/SpaceWebsite.png"
+    src: "/FilmFlash.png"
   },
   {
     title: "Modern Nextjs Portfolio",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/WebPortfolio.png"
+    src: "/QueueBall.png"
   },
   {
     title: "Matrix themed Website",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/Matrix.png"
+    src: "/Scheduler.png"
   }
 ];
 
