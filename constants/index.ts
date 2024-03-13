@@ -4,75 +4,74 @@ export const SkillData = [
   {
     name: "Html 5",
     Image: "/html.png",
-    width: 70,
-    height: 70
+    width: 75,
+    height: 75
   },
   {
-    name: "Css",
+    name: "CSS",
     Image: "/css.png",
-    width: 70,
-    height: 70
+    width: 75,
+    height: 75
   },
   {
     name: "JavaScript",
     Image: "/js.png",
-    width: 70,
+    width: 75,
     height: 65
   },
   {
-    name: "Tailwind Css",
+    name: "Python",
+    Image: "/python.png",
+    width: 65,
+    height: 75
+  },
+  {
+    name: "Ruby",
+    Image: "/ruby.png",
+    width: 75,
+    height: 75
+  },
+  {
+    name: "Node JS",
+    Image: "/node-js.png",
+    width: 65,
+    height: 75
+  },
+  {
+    name: "Tailwind CSS",
     Image: "/tailwind.png",
-    width: 70,
-    height: 70
+    width: 75,
+    height: 75
   },
   {
     name: "React",
     Image: "/react.png",
-    width: 70,
-    height: 70
+    width: 82,
+    height: 75
   },
-  {
-    name: "Redux",
-    Image: "/redux.png",
-    width: 70,
-    height: 70
-  },
-
   {
     name: "TypeScript",
     Image: "/ts.png",
-    width: 70,
-    height: 70
+    width: 75,
+    height: 75
   },
   {
-    name: "Next js 13",
+    name: "Next JS",
     Image: "/next.png",
-    width: 70,
-    height: 70
+    width: 75,
+    height: 75
   },
   {
-    name: "Framer Motion",
-    Image: "/framer.png",
-    width: 70,
-    height: 70
+    name: "Ruby on Rails",
+    Image: "/rails.png",
+    width: 75,
+    height: 75
   },
   {
-    name: "Stripe Payment",
-    Image: "/stripe.webp",
-    width: 70,
-    height: 70
-  },
-  {
-    name: "Node js",
-    Image: "/node-js.png",
-    width: 70,
-    height: 70
-  },
-  {
-    name: "Mongo db",
-    Image: "/mongodb.png",
-    width: 70,
-    height: 70
+    name: "PostgreSQL",
+    Image: "/postgres.png",
+    width: 75,
+    height: 75
   }
 ];
 
@@ -87,11 +86,6 @@ export const Socials = [
     src: "/linkedin.png",
     href: "https://www.linkedin.com/in/adam-kowalczuk"
   }
-  // {
-  //   name: "Discord",
-  //   src: "/discord.svg",
-  //   href:
-  // }
 ];
 export const Projects = [
   {
