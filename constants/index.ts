@@ -1,4 +1,4 @@
-import { RxHome, RxPerson, RxDashboard, RxClipboard } from "react-icons/rx";
+import { RxPerson, RxDashboard, RxClipboard } from "react-icons/rx";
 
 export const SkillData = [
   {
@@ -89,24 +89,22 @@ export const Socials = [
 ];
 export const Projects = [
   {
-    title: "Modern Nextjs Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/NextWebsite.png"
+    title: "Film Flash",
+    text: "Browser extension that replaces the new tab page with a randomly generated background image, title, and description from a recently released movie.",
+    src: "/FilmFlash.png",
+    href: "https://chromewebstore.google.com/detail/film-flash/elgeigpdpdmckhidkiamecaehhmgkdcd?pli=1"
   },
   {
-    title: "Space Themed Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/SpaceWebsite.png"
+    title: "QueueBall",
+    text: "A single-page queueing app that lets users keep track of their place in line at pool tables at the bar.",
+    src: "/QueueBall.png",
+    href: "https://cosmic-khapse-1d3ddf.netlify.app/"
   },
   {
-    title: "Modern Nextjs Portfolio",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/WebPortfolio.png"
-  },
-  {
-    title: "Matrix themed Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/Matrix.png"
+    title: "Scheduler",
+    text: "A React-based project that allows students to create and manage appointments with mentors in real time.",
+    src: "/Scheduler.png",
+    href: "https://enchanting-pixie-b32c29.netlify.app/"
   }
 ];
 

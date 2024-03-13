@@ -5,21 +5,28 @@ import ProjectCard from "@/components/ProjectCard";
 
 const Page = () => {
   return (
-    <div
-      style={{ backgroundImage: "url(/mountains.jpg)" }}
-      className="w-screen h-screen flex items-center justify-center bg-center bg-cover"
-    >
-      {/* Grid layout with maximum width and height */}
-      <div className="grid grid-cols-2 gap-5 max-w-[90%] max-h-[90%]">
-        {/* Mapping over the Projects array and rendering a ProjectCard component for each project */}
-        {Projects.map((project, index) => (
-          <ProjectCard
-            key={index}
-            title={project.title}
-            text={project.text}
-            image={project.src}
-          />
-        ))}
+    <div className="w-screen h-screen flex flex-col items-center justify-center bg-[#1b1d1e]">
+      <div className="flex flex-col gap-[50px] max-w-[80%] xl:max-w-[60%] items-center justify-center mb-[5rem] w-full h-full">
+        <div className="flex flex-col gap-4 w-[100%] text-center sm:text-left">
+          <h1 className="font-semibold text-gray-200 text-[48px]">Projects</h1>
+          <p className="text-gray-200">
+            This site was created using NextJS, TypeScript, and Tailwind CSS. It
+            is currently deployed via Vercel.
+          </p>
+        </div>
+        {/* Grid layout with maximum width and height */}
+        <div className="hidden lg:flex flex-col sm:flex-row gap-5 max-w-[100%]">
+          {/* Mapping over the Projects array and rendering a ProjectCard component for each project */}
+          {Projects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              title={project.title}
+              text={project.text}
+              image={project.src}
+              href={project.href}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
