@@ -89,18 +89,18 @@ export const Socials = [
 ];
 export const Projects = [
   {
-    title: "Space Themed Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    title: "Film Flash",
+    text: "Browser extension that replaces the new tab page with a randomly generated background image, title, and description from a recently released movie.",
     src: "/FilmFlash.png"
   },
   {
-    title: "Modern Nextjs Portfolio",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    title: "QueueBall",
+    text: "A single-page queueing app that lets users keep track of their place in line at pool tables at the bar.",
     src: "/QueueBall.png"
   },
   {
-    title: "Matrix themed Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    title: "Scheduler",
+    text: "A React-based project that allows students to create and manage appointments with mentors in real time.",
     src: "/Scheduler.png"
   }
 ];
