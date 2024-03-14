@@ -1,7 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { RxArrowTopRight } from "react-icons/rx";
-import { motion } from "framer-motion";
 
 // Defining a TypeScript interface for the props expected by the ProjectCard component
 interface Props {
@@ -12,62 +11,29 @@ interface Props {
 }
 
 const ProjectCard = ({ image, title, text, href }: Props) => {
-  // Using state to track whether the card is flipped and whether it's currently animating
-  const [isFlipped, setIsFlipped] = useState(false);
-  const [isAnimating, setIsAnimating] = useState(false);
-
-  // Function to handle flipping the card
-  function handleFlip() {
-    // If not currently animating, flip the card and set animating state to true
-    if (!isAnimating) {
-      setIsFlipped(!isFlipped);
-      setIsAnimating(true);
-    }
-  }
-
   // Rendering the component
   return (
-    <div
-      onClick={handleFlip}
-      className="w-[337.5px] h-[210px] rounded-md cursor-pointer"
-    >
-      <motion.div
-        className="flip-card-inner w-full h-full"
-        initial={false}
-        animate={{ rotateY: isFlipped ? 180 : 360 }} // Conditionally rotating the card based on isFlipped state
-        transition={{ duration: 0.6, animationDirection: "normal" }} // Setting transition duration and direction
-        onAnimationComplete={() => setIsAnimating(false)} // Callback when animation completes to set isAnimating state to false
+    <div className="w-[337.5px] h-[210px] cursor-pointer group relative text-gray-200">
+      {/* Front side of the card */}
+      <div
+        style={{ backgroundImage: `url(${image})` }} // Setting background image
+        className="w-full h-full bg-cover bg-center rounded-lg p-4 transition-opacity duration-[1.5s] ease-in-out group-hover:opacity-0 absolute" // Applying styles using Tailwind CSS classes
+      ></div>
+      {/* Back side of the card */}
+      <div
+        className="w-full h-full bg-purple border-[1px] border-gray-200 rounded-lg p-4 transition-opacity duration-[1.5s] ease-in-out opacity-0 group-hover:opacity-100 absolute" // Applying styles using Tailwind CSS classes
       >
-        {/* Front side of the card */}
-        <div
-          style={{ backgroundImage: `url(${image})` }} // Setting background image
-          className="w-full h-full group relative flip-card-front bg-cover bg-center text-gray-200 rounded-lg p-4" // Applying styles using Tailwind CSS classes
-        >
-          {/* Overlay for hover effect */}
-          <div className="absolute inset-0 w-full h-full rounded-md bg-black opacity-0 group-hover:opacity-40" />
-          {/* Text indicating more information */}
-          <div className="absolute inset-0 w-full h-full text-[20px] pb-10 hidden group-hover:flex items-center z-[20] justify-center">
-            Learn more &gt;
-          </div>
+        {/* Project title and text */}
+        <div className="flex flex-col gap-4 py-1 z-[30]">
+          <h1 className="flex flex-row items-center text-2xl font-semibold">
+            {title}
+            <a href={href} target="_blank">
+              <RxArrowTopRight className="hover:text-red-800 font-bold ml-2" />
+            </a>
+          </h1>
+          <p className="text-gray-200 text-[16px]">{text}</p>
         </div>
-        {/* Back side of the card */}
-        <div
-          className="w-full h-full group relative flip-card-back bg-[#1b1d1e] text-gray-200 rounded-lg p-4" // Applying styles using Tailwind CSS classes
-        >
-          {/* Overlay for hover effect */}
-          <div className="absolute inset-0 w-full h-full rounded-md bg-black opacity-50 z-[-1]" />
-          {/* Project title and text */}
-          <div className="flex flex-col gap-4 py-3 z-[30]">
-            <h1 className="flex flex-row items-center text-gray-200 text-2xl font-semibold">
-              {title}
-              <a href={href}>
-                <RxArrowTopRight className="hover:text-red-800 font-bold ml-2" />
-              </a>
-            </h1>
-            <p className="text-gray-200 text-[16px]">{text}</p>
-          </div>
-        </div>
-      </motion.div>
+      </div>
     </div>
   );
 };
