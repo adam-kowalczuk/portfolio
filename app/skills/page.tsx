@@ -21,7 +21,7 @@ const Page = () => {
           </p>
         </div>
         {/* Swiper component for displaying skills */}
-        <div className="flex flex-row flex-wrap justify-center items-center">
+        <div className="flex flex-row flex-wrap w-full justify-center 2xl:justify-between items-center">
           {SkillData.map((skill, index) => (
             <Image
               key={index}
@@ -29,7 +29,7 @@ const Page = () => {
               alt={skill.name}
               width={skill.width}
               height={skill.height}
-              className="h-[75px] p-2 transform transition-transform duration-300 hover:scale-125 cursor-pointer"
+              className="h-[75px] p-2 2xl:p-1 transform transition-transform duration-300 hover:scale-125 cursor-pointer"
             />
           ))}
         </div>

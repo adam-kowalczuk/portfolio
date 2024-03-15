@@ -13,11 +13,11 @@ interface Props {
 const ProjectCard = ({ image, title, text, href }: Props) => {
   // Rendering the component
   return (
-    <div className="w-[337.5px] h-[210px] cursor-pointer group relative text-gray-200">
+    <div className="w-[337.5px] h-[230px] cursor-pointer group relative text-gray-200">
       {/* Front side of the card */}
       <div
         style={{ backgroundImage: `url(${image})` }} // Setting background image
-        className="w-full h-full bg-cover bg-center rounded-lg p-4 transition-opacity duration-[1.5s] ease-in-out group-hover:opacity-0 absolute" // Applying styles using Tailwind CSS classes
+        className="w-full h-full bg-cover bg-center border-[1px] border-gray-200 rounded-lg p-4 transition-opacity duration-[1.5s] ease-in-out group-hover:opacity-0 absolute" // Applying styles using Tailwind CSS classes
       ></div>
       {/* Back side of the card */}
       <div

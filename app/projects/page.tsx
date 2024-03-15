@@ -21,7 +21,7 @@ const Page = () => {
           ))}
         </div>
         {/* Flex layout with maximum width and height */}
-        <div className="hidden lg:flex flex-col sm:flex-row gap-5 max-w-[100%]">
+        <div className="hidden lg:flex flex-col sm:flex-row gap-5 w-full justify-between">
           {/* Mapping over the Projects array and rendering a ProjectCard component for each project */}
           {Projects.map((project, index) => (
             <ProjectCard
