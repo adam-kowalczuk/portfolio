@@ -13,7 +13,7 @@ interface Props {
 const ProjectCard = ({ image, title, text, href }: Props) => {
   // Rendering the component
   return (
-    <div className="w-[337.5px] h-[210px] cursor-pointer group relative text-gray-200">
+    <div className="w-[337.5px] h-[230px] cursor-pointer group relative text-gray-200">
       {/* Front side of the card */}
       <div
         style={{ backgroundImage: `url(${image})` }} // Setting background image
