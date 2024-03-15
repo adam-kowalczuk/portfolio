@@ -3,15 +3,12 @@ import React from "react";
 
 const Page = () => {
   return (
-    <div
-      style={{ backgroundImage: "url(/bg-3.jpg)" }}
-      className="w-screen h-screen bg-cover bg-center flex items-center justify-center"
-    >
-      <div
-        style={{ backgroundImage: "url(atombg-comp.webp)" }}
-        className="h-[60%] w-[80%] relative bg-cover bg-center rounded-xl border border-white "
-      >
-        <div className="absolute left-20 bottom-16 w-[70%] md:w-[30%]">
+    <div className="w-screen h-screen bg-[#1b1d1e] flex items-center justify-center">
+      <div className="w-[80%] xl:w-[60%] flex flex-col items-center md:items-start">
+        <div className="flex flex-col gap-4 w-[100%] text-center sm:text-left">
+          <h1 className="font-semibold text-gray-200 text-[48px]">Contact</h1>
+        </div>
+        <div className="w-[70%] md:w-[40%] mt-10">
           <ContactForm />
         </div>
       </div>
