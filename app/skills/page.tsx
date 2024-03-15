@@ -29,7 +29,7 @@ const Page = () => {
               alt={skill.name}
               width={skill.width}
               height={skill.height}
-              className="h-[75px] p-2"
+              className="h-[75px] p-2 transform transition-transform duration-300 hover:scale-125 cursor-pointer"
             />
           ))}
         </div>
