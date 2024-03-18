@@ -14,13 +14,13 @@ export default function Home() {
           <p className="text-gray-200 sm:block">
             My experience thus far has been in building robust web applications
             primarily with <span className="font-bold">JavaScript</span>. As of
-            late I'm partial to working with{" "}
+            late I&apos;m partial to working with{" "}
             <span className="font-bold">React</span> frameworks.
           </p>
           <p className="text-gray-200 sm:block">
-            I'm currently looking for my next role, so have a look around, and
-            don't hesitate to reach out if you're interested in working
-            together.
+            I&apos;m currently looking for my next role, so have a look around,
+            and don&apos;t hesitate to reach out if you&apos;re interested in
+            working together.
           </p>
         </div>
       </div>
