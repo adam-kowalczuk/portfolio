@@ -6,7 +6,11 @@ const ContactForm = () => {
   const [state, handleSubmit] = useForm("PLACEHOLDER");
 
   if (state.succeeded) {
-    return <p className="text-gray-200">Thanks for reaching out!</p>;
+    return (
+      <p className="text-gray-200 text-center sm:text-left">
+        Thanks for reaching out!
+      </p>
+    );
   }
 
   return (
