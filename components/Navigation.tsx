@@ -1,41 +1,19 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { usePathname } from "next/navigation";
 import { NavLinks } from "@/constants";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import Transition from "./Transition";
 
 // Define the Navigation component
 const Navigation = () => {
-  // State variables to manage routing status and previous path
-  const [isRouting, setIsRouting] = useState(false); // State variable to indicate if routing is in progress
-  const [prevPath, setPrevPath] = useState("/"); // State variable to store the previous path
+  // State variable to manage mobile menu
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const path = usePathname(); // Get the current browser path
 
+  // Set mobile menu state
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  // Effect to detect change in path and set isRouting to true
-  useEffect(() => {
-    if (prevPath !== path) {
-      setIsRouting(true);
-    }
-  }, [path, prevPath]);
-
-  // Effect to handle routing animation and set isRouting to false after animation
-  useEffect(() => {
-    if (isRouting) {
-      setPrevPath(path);
-      const timeout = setTimeout(() => {
-        setIsRouting(false);
-      }, 1200); // Set timeout for 1200 milliseconds to mimic routing animation
-      return () => clearTimeout(timeout); // Cleanup function to clear timeout
-    }
-  }, [isRouting]);
 
   // Render the navigation component
   return (
@@ -85,8 +63,6 @@ const Navigation = () => {
           </Link>
         ))}
       </div>
-
-      {isRouting && <Transition />}
     </div>
   );
 };
