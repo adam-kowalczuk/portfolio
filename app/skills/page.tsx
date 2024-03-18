@@ -10,14 +10,17 @@ import Image from "next/image";
  **/
 const Page = () => {
   return (
-    <div className="h-screen w-screen flex flex-col items-center justify-center bg-[#1b1d1e]">
-      <div className="flex flex-col w-full gap-[50px] max-w-[80%] xl:max-w-[60%] items-center mb-[5rem]">
+    <div className="h-screen w-screen flex flex-col items-center justify-center">
+      <div className="flex flex-col w-full gap-5 max-w-[80%] xl:max-w-[60%] items-center mb-[5rem] sm:mb-[11rem]">
         {/* Title and subtitle section */}
         <div className="flex flex-col gap-4 w-[100%] text-center sm:text-left">
           <h1 className="font-semibold text-gray-200 text-[48px]">Skills</h1>
           <p className="text-gray-200">
-            This site was created using NextJS, TypeScript, and Tailwind CSS. It
-            is currently deployed via Vercel.
+            This site was created using{" "}
+            <span className="font-bold">Next.js</span>,{" "}
+            <span className="font-bold">TypeScript</span>, and{" "}
+            <span className="font-bold">Tailwind CSS</span>. It is currently
+            deployed via <span className="font-bold">Vercel</span>.
           </p>
         </div>
         {/* Swiper component for displaying skills */}
@@ -29,7 +32,7 @@ const Page = () => {
               alt={skill.name}
               width={skill.width}
               height={skill.height}
-              className="h-[75px] p-2 2xl:p-1 transform transition-transform duration-300 hover:scale-125 cursor-pointer"
+              className="p-2 2xl:p-1 transform transition-transform duration-300 hover:scale-125 cursor-pointer"
             />
           ))}
         </div>
