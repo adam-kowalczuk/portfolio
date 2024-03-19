@@ -20,7 +20,7 @@ const Page = () => {
             <span className="font-bold">Next.js</span>,{" "}
             <span className="font-bold">TypeScript</span>,{" "}
             <span className="font-bold">Tailwind CSS</span>, and{" "}
-            <span className="font-bold">Framer Motion</span> It is currently
+            <span className="font-bold">Framer Motion</span>. It is currently
             deployed via <span className="font-bold">Vercel</span>.
           </p>
         </div>
