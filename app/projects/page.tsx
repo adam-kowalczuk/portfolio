@@ -8,7 +8,7 @@ const Page = () => {
     <div className="w-screen h-screen flex flex-col items-center justify-center text-gray-200">
       <div className="flex flex-col gap-5 max-w-[80%] xl:max-w-[60%] items-center justify-center mb-[5rem] w-full h-full">
         <div className="flex flex-col gap-4 w-[100%] text-center sm:text-left">
-          <h1 className="font-semibold text-[48px]">Projects</h1>
+          <h1 className="font-semibold text-[36px] sm:text-[48px]">Projects</h1>
         </div>
         {/* Mobile/small screen project links */}
         <div className="flex flex-col sm:flex-row lg:hidden gap-4 sm:w-full">
