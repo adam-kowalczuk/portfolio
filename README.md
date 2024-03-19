@@ -4,4 +4,4 @@ Personal website created with [Next.js](https://nextjs.org/), [TypeScript](https
 
 ## Preview
 
-!["Homepage"]()
+!["Homepage"](https://github.com/adam-kowalczuk/portfolio/blob/readme/docs/Homepage.png?raw=true)
