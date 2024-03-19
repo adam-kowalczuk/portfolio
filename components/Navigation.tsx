@@ -40,7 +40,7 @@ const Navigation = () => {
               <Link
                 key={nav.name}
                 href={nav.link}
-                className="block py-2 text-gray-200 text-lg hover:text-red-800"
+                className="block py-1 text-gray-200 text-lg hover:text-red-800"
                 onClick={toggleMenu}
               >
                 {nav.name}
