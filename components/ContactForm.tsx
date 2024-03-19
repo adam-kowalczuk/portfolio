@@ -3,7 +3,8 @@ import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
 const ContactForm = () => {
-  const [state, handleSubmit] = useForm("PLACEHOLDER");
+  const FORM_KEY = process.env.NEXT_PUBLIC_FORM_KEY;
+  const [state, handleSubmit] = useForm(`${FORM_KEY}`);
 
   if (state.succeeded) {
     return (
