@@ -1,6 +1,6 @@
 # Personal Website
 
-Personal website created with [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/), and [Framer Motion](https://www.framer.com/motion/). This site project is currently deployed via [Vercel](https://www.vercel.com). You can view it [here](https://www.kowalczuk.dev).
+Personal website created with [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/), and [Framer Motion](https://www.framer.com/motion/). This project is currently deployed via [Vercel](https://www.vercel.com). You can view it [here](https://www.kowalczuk.dev).
 
 ## Preview
 
