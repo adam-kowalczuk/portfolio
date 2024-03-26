@@ -22,7 +22,7 @@ const Footer = () => {
         ))}
       </div>
       <Link
-        className="hover:text-red-800"
+        className="transition-color duration-300 hover:text-red-800"
         href="https://www.github.com/adam-kowalczuk/portfolio"
         target="_blank"
       >
