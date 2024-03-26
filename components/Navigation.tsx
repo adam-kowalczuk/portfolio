@@ -57,7 +57,7 @@ const Navigation = () => {
           <Link
             key={nav.name}
             href={nav.link}
-            className="pl-4 min-w-[20%] text-gray-200 text-[24px] hover:text-red-800"
+            className="pl-4 min-w-[20%] text-gray-200 text-[24px] transition-color duration-300 hover:text-red-800"
           >
             {nav.name}
           </Link>
