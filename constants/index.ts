@@ -91,19 +91,19 @@ export const Projects = [
   {
     title: "Film Flash",
     text: "Browser extension that replaces the new tab page with a randomly generated background image, title, and description from a recently released movie.",
-    src: "/FilmFlash.png",
+    src: "/FilmFlash.jpeg",
     href: "https://chromewebstore.google.com/detail/film-flash/elgeigpdpdmckhidkiamecaehhmgkdcd?pli=1"
   },
   {
     title: "QueueBall",
     text: "A single-page queueing app that lets users keep track of their place in line at pool tables at the bar.",
-    src: "/QueueBall.png",
+    src: "/QueueBall.jpeg",
     href: "https://cosmic-khapse-1d3ddf.netlify.app/"
   },
   {
     title: "Scheduler",
     text: "A React-based project that allows students to create and manage appointments with mentors in real time.",
-    src: "/Scheduler.png",
+    src: "/Scheduler.jpeg",
     href: "https://enchanting-pixie-b32c29.netlify.app/"
   }
 ];
